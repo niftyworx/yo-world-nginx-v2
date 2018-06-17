@@ -8,6 +8,7 @@ docker run -p 80:80 nifyworx/yo-world-nginx-v2:latest
 curl localhost:80 | http://localhost:80
 curl localhost:80/v2/ | http://localhost:80/v2/
 
+NOTE: Dynamic port mappings is only supported on ALB not ELB (Classic Load Balancer) - need an explicity hostPort to containerPort bindings
 
 Task Definition: task-dev-yo-world-v2:2
 
